@@ -1,0 +1,9 @@
+spring:
+  innerkafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: group1
+  outerkafka:
+    bootstrap-servers: localhost:9094
+    consumer:
+      group-id: group2
