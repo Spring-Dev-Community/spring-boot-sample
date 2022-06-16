@@ -5,12 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.relive</groupId>
-    <artifactId>spring-boot-toturials</artifactId>
+    <artifactId>spring-boot-sample</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spring-mutil-kafka</module>
+        <module>spring-boot-kafka</module>
         <module>spring-boot-flyway</module>
+        <module>spring-boot-tls</module>
+        <module>spring-boot-rest</module>
+        <module>spring-boot-validation</module>
+        <module>spring-boot-application-events</module>
+        <module>spring-boot-test</module>
+        <module>spring-boot-scheduling</module>
     </modules>
 
     <properties>
@@ -21,7 +27,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.12.RELEASE</version>
+        <version>2.5.10</version>
     </parent>
 
     <dependencyManagement>
@@ -29,11 +35,29 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Hoxton.SR12</version>
+                <version>2020.0.4</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
