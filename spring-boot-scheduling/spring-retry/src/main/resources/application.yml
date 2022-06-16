@@ -1,0 +1,3 @@
+retry:
+  maxAttempts: 2
+  maxDelay: 100000
