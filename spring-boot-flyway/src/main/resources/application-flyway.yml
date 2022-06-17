@@ -1,0 +1,26 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/flyway_test?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+
+  flyway:
+    # 到新的环境中数据库中有数据，且没有flyway_schema_history表时，是否执行迁移操作。
+    # 如果设置为false，在启动时会报错，并停止迁移;
+    # 如果设置为true,则生成history表并完成所有的迁移，要根据实际情况设置;
+    baseline-on-migrate: true
+    # 执行时标记的tag 默认为<<Flyway Baseline>>
+    baseline-description: <<Flyway Baseline>>
+    # 是否启用flyway
+    enabled: true
+    # 检测迁移脚本的路径是否存在，如不存在，则抛出异常
+    check-location: true
+    # 脚本位置
+    locations: classpath:db/migration
+    # 在迁移时，是否校验脚本，假设V1.0__初始.sql已经迁移过了，在下次启动时会校验该脚本是否有变更过，则抛出异常
+    validate-on-migrate: true
