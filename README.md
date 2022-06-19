@@ -13,3 +13,4 @@ This module contains articles about Spring Boot
 - [在SpringBoot中使用Quartz]()
 - [SpringBoot中的Retry简单使用]()
 - [Flyway多数据源配置]()
+- [Spring项目的resources目录下的文件读取](https://relive27.github.io/2022/05/09/spring-read-resource/)
