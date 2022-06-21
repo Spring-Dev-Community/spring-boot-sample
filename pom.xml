@@ -18,6 +18,7 @@
         <module>spring-boot-test</module>
         <module>spring-boot-scheduling</module>
         <module>spring-static-resource</module>
+        <module>spring-boot-mybatis-plus</module>
     </modules>
 
     <properties>
