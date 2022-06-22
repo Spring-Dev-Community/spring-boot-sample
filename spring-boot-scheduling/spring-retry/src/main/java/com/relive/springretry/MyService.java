@@ -9,10 +9,9 @@ import org.springframework.stereotype.Service;
  * @author: ReLive
  * @date: 2022/6/1 6:31 下午
  */
-@Service
 public interface MyService {
     /**
-     * 重试最多可能发生 3 次，重试之间有 1 秒的延迟
+     * Retry默认行为，重试最多可能发生 3 次，重试之间有 1 秒的延迟
      *
      * @param arg
      */
