@@ -1,9 +1,0 @@
-server:
-  ssl:
-    enabled: true # enable/disable https
-    key-store-type: PKCS12
-    key-store: classpath:keystore/keystore.p12
-    key-store-password: changeit
-    protocol: TLS
-    enabled-protocols: TLSv1.2
-  port: 8443

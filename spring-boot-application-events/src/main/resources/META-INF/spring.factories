@@ -1,4 +1,0 @@
-org.springframework.context.ApplicationListener=com.relive.listener.ApplicationStartingEventListener, \
- com.relive.listener.ApplicationEnvironmentPreparedEventListener, \
- com.relive.listener.ApplicationContextInitializedEventListener, \
- com.relive.listener.ApplicationPreparedEventListener
