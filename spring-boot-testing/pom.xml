@@ -32,6 +32,10 @@
             <version>1.0.1</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.2</version>
+        </dependency>
     </dependencies>
 </project>
