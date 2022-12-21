@@ -15,9 +15,9 @@ modules here also cover many other aspects of Spring Boot.
 
 ## Spring framework version
 
-| Spring Boot 版本  | 
-| ---------------- | 
-| V3.0.0          | 
+| Spring Boot   | Spring Cloud  |
+| ---------------- | ------- |
+|  3.0.0          |  2022.0.0  |
 
 ## Building from Source
 
