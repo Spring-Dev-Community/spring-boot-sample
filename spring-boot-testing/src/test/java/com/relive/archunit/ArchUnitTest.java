@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RestController;
 
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;
+import static com.tngtech.archunit.library.Architectures.layeredArchitecture;
 
 /**
  * @author: ReLive
@@ -72,6 +73,20 @@ public class ArchUnitTest {
                     .should().beAnnotatedWith(Configuration.class)
                     .orShould().beAnnotatedWith(ConfigurationProperties.class);
 
+
+    /**
+     * 图层检查，Service层仅被Controller访问，Dao层仅被Service层访问
+     */
+    @ArchTest
+    static ArchRule layer_inspection = layeredArchitecture()
+            .consideringAllDependencies()
+            .layer("Controller").definedBy("..controller..")
+            .layer("Service").definedBy("..service..")
+            .layer("Dao").definedBy("..dao..")
+
+            .whereLayer("Controller").mayNotBeAccessedByAnyLayer()
+            .whereLayer("Service").mayOnlyBeAccessedByLayers("Controller")
+            .whereLayer("Dao").mayOnlyBeAccessedByLayers("Service");
 
     /**
      * 或者你可能有一个你想忽略的类，因为规则不适用于它。创建一个自定义规则并导入它。
