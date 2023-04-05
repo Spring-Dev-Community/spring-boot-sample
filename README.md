@@ -1,4 +1,4 @@
-# <font size="6p">spring-boot-sample</font> <font size="5p">  | [English Documentation](README_EN.md)</font>
+# <font size="6p">spring-boot-sample</font> <font size="5p">  | [中文文档](README_zh.md)</font>
 
 <p align="left">
 	<a href="https://github.com/ReLive27/spring-boot-sample/stargazers"><img src="https://img.shields.io/github/stars/ReLive27/spring-boot-sample?style=flat-square&logo=GitHub"></a>
@@ -8,42 +8,45 @@
 	<a href="https://github.com/ReLive27/spring-boot-sample/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ReLive27/spring-boot-sample.svg?style=flat-square"></a>
 </p>
 
-这个项目是一个 [Spring Boot](https://spring.io/projects/spring-boot) 示例教程的集合——每个模块都覆盖一个单一的 Spring Boot 集成常用框架的教程。 其中包含 Spring
-Boot 整合 Redis、Kafka、Quartz、WebSocket、Mybatis 等等主流的技术框架，除了上述之外， 这里的模块还涵盖了 Spring Boot 的许多其他方面。
+This project is a collection of [Spring Boot](https://spring.io/projects/spring-boot) sample tutorials - each module
+covering a single Spring Boot integration tutorial for common frameworks. which contains Spring Boot integrates
+mainstream technical frameworks such as Redis, Kafka, Quartz, WebSocket, Mybatis, etc. In addition to the above, the
+modules here also cover many other aspects of Spring Boot.
 
-## Spring 框架版本
+## Spring Framework Version
 
-| Spring Boot 版本  | Spring Cloud 版本 |
-| ---------------- | ------------ |
-| 3.0.0          |      2022.0.0   |
+| Spring Boot   | Spring Cloud  |
+| ---------------- | ------- |
+|  3.0.0          |  2022.0.0  |
 
-## 构建项目
+## Building from Source
 
-spring-boot-sample 使用基于 [Maven](https://maven.apache.org/) 的构建系统。
+spring-boot-sample uses a [Maven](https://maven.apache.org/) based build system.
 
-### 先决条件
+### Prerequisites
 
-[Git](https://help.github.com/set-up-git-redirect) 和 [JDK17](https://www.oracle.com/technetwork/java/javase/downloads)
-构建。
+[Git](https://help.github.com/set-up-git-redirect) and
+the [JDK17 build](https://www.oracle.com/technetwork/java/javase/downloads).
 
-确保您的`JAVA_HOME`环境变量指向 `jdk-17.0.5` 从 JDK 下载中提取的文件夹。
+Be sure that your `JAVA_HOME` environment variable points to the `jdk-17.0.5` folder extracted from the JDK download.
 
-### 检查来源
+### Check out sources
 
 ```
 git clone git@github.com:ReLive27/spring-boot-sample.git
 ```
 
-### 构建并安装项目：
+### Build and Install the Project:
 
 ```
 ./mvn clean install
 ```
 
-## 贡献
+## Contributing
 
-非常欢迎[提出请求](https://help.github.com/articles/creating-a-pull-request) 。
+[Pull requests](https://help.github.com/articles/creating-a-pull-request) are welcome.
 
-## 许可
+## License
 
-spring-boot-sample 是在 [Apache 2.0 许可](https://www.apache.org/licenses/LICENSE-2.0.html) 下发布的开源软件 。
+spring-boot-sample is Open Source software released under the
+[Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
