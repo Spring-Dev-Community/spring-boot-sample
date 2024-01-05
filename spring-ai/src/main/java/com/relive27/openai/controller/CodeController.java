@@ -44,7 +44,7 @@ public class CodeController {
         String message = "What is the most popular programming language in {year}? {format}";
         PromptTemplate promptTemplate = new PromptTemplate(message);
         promptTemplate.add("year", year);
-        promptTemplate.add("format", parser);
+        promptTemplate.add("format", parser.getFormat());
         promptTemplate.setOutputParser(parser);
 
         log.info("FORMAT STRING: " + parser.getFormat());
