@@ -10,8 +10,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
  */
 @TableName("db_user")
 public class User {
-    @TableId(type = IdType.AUTO)
-    private Long id;
+    @TableId(type = IdType.INPUT)
+    private String id;
     private String username;
     private String password;
 }
