@@ -13,6 +13,7 @@
         <module>spring-boot-testing</module>
         <module>spring-boot-retry</module>
         <module>spring-ai</module>
+        <module>spring-boot-rest</module>
         <module>spring-boot-libraries</module>
     </modules>
     <parent>
